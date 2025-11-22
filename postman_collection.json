@@ -1,0 +1,42 @@
+{
+	"info": {
+		"name": "Hospital API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/patients",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "v1", "patients"]
+				}
+			}
+		},
+		{
+			"name": "Create Patient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{ "key": "Content-Type", "value": "application/json" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"patient\":{\"name\":\"Test\",\"surname\":\"User\",\"tc_no\":\"12345678900\",\"phone\":\"123\"}}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/patients",
+					"protocol": "http",
+					"host": ["localhost"],
+					"port": "3000",
+					"path": ["api", "v1", "patients"]
+				}
+			}
+		}
+	]
+}

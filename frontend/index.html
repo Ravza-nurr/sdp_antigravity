@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Antigravity Hospital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="antigravity-header">
+            <h1>🏥 Antigravity Hospital</h1>
+            <p>Vibe Coding & AI-Powered Healthcare</p>
+        </header>
+
+        <main>
+            <!-- Patient Section -->
+            <section id="patient-section" class="card">
+                <h2>Hasta İşlemleri</h2>
+                <form id="patient-form">
+                    <input type="text" id="p-name" placeholder="Ad" required>
+                    <input type="text" id="p-surname" placeholder="Soyad" required>
+                    <input type="text" id="p-tc" placeholder="TC No (11 hane)" required>
+                    <input type="text" id="p-phone" placeholder="Telefon" required>
+                    <input type="email" id="p-email" placeholder="Email">
+                    <button type="submit" class="btn-primary">Hasta Kaydet</button>
+                </form>
+                <h3>Kayıtlı Hastalar</h3>
+                <ul id="patient-list" class="list-group"></ul>
+            </section>
+
+            <!-- Doctor Section -->
+            <section id="doctor-section" class="card">
+                <h2>Doktorlar</h2>
+                <button id="load-doctors" class="btn-secondary">Doktorları Listele</button>
+                <ul id="doctor-list" class="list-group"></ul>
+            </section>
+
+            <!-- Appointment Section -->
+            <section id="appointment-section" class="card">
+                <h2>Randevu Al</h2>
+                <form id="appointment-form">
+                    <select id="a-patient" required>
+                        <option value="">Hasta Seçin</option>
+                    </select>
+                    <select id="a-doctor" required>
+                        <option value="">Doktor Seçin</option>
+                    </select>
+                    <input type="date" id="a-date" required>
+                    <input type="time" id="a-time" required>
+                    <button type="submit" class="btn-accent">Randevu Oluştur</button>
+                </form>
+                <h3>Randevular</h3>
+                <table id="appointment-table">
+                    <thead>
+                        <tr>
+                            <th>Tarih</th>
+                            <th>Saat</th>
+                            <th>Hasta</th>
+                            <th>Doktor</th>
+                            <th>Durum</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

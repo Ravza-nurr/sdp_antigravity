@@ -1,0 +1,13 @@
+{
+  "name": "hospital-system-frontend",
+  "version": "1.0.0",
+  "description": "Frontend and E2E tests for Hospital System",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --browser chrome --headless",
+    "test:video": "cypress run --config video=true"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}
