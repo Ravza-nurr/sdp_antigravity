@@ -18,11 +18,11 @@ TARGET_DURATION = 35.0
 
 # Timeline Data (Time in seconds - Original)
 TIMELINE = [
-    {"time": 0.5, "text": "Test başlatıldı."},
-    {"time": 2.1, "text": "Giriş yapılıyor."},
-    {"time": 5.8, "text": "Giriş başarılı."},
-    {"time": 9.3, "text": "Kayıt formu açıldı."},
-    {"time": 12.0, "text": "Kayıt işlemi tamamlandı."}
+    {"time": 0.5, "text": "Hastane Randevu Sistemi otomasyon testi başlatılıyor."},
+    {"time": 3.5, "text": "Kullanıcı sisteme giriş yapmak için bilgileri giriyor."},
+    {"time": 7.0, "text": "Giriş başarılı. Ana sayfaya yönlendirildik."},
+    {"time": 10.5, "text": "Yeni bir randevu oluşturmak için form açılıyor."},
+    {"time": 14.0, "text": "Randevu başarıyla kaydedildi ve listeye eklendi."}
 ]
 
 def generate_audio(text, index):
